@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Minion Pro", serif; }
+
+header {
+  background: #2e2e2e;
+  width: 100%;
+  text-align: center; }
+  header h2 {
+    margin-top: 0px;
+    color: #c43a3a;
+    font: 300 36px "Minion Pro", serif; }
+  header .phone {
+    font: 700 53px "Minion Pro", serif;
+    color: #c43a3a; }
+  header ul {
+    height: 45px; }
+    header ul a {
+      display: inline-block; }
+    header ul li {
+      font: normal 16px "Minion Pro", serif;
+      display: table;
+      height: 45px;
+      width: 150px;
+      text-decoration: none;
+      color: #fefefe;
+      text-transform: uppercase; }
+      header ul li span {
+        display: table-cell;
+        vertical-align: middle; }
+    header ul li.active {
+      background: #eaeaea;
+      color: #2e2e2e; }
+
+.main {
+  width: 1120px;
+  margin: auto;
+  padding: 40px 0px;
+  color: #2e2e2e; }
+  .main h1 {
+    font-size: 40px; }
+  .main h2 {
+    font-size: 30px; }
+  .main .hr {
+    background: #e84747;
+    height: 3px; }
+  .main h3 {
+    font-size: 24px; }
+  .main ul.abilities {
+    margin-bottom: 40px;
+    font-size: 20px; }
+  .main .photos {
+    font-size: 0px;
+    margin-bottom: 40px; }
+    .main .photos img {
+      margin: 3px; }
+  .main ul.exercises {
+    font-size: 20px; }
+
+footer {
+  background: #2e2e2e;
+  width: 100%;
+  color: #ffffff;
+  font: normal 16px Tahoma, Arial, sans-serif; }
+  footer .container {
+    width: 1120px;
+    margin: auto;
+    padding: 70px 0px; }
+  footer .info {
+    margin-bottom: 20px; }
+    footer .info p {
+      margin: 0; }
+  footer .contacts {
+    font-size: 20px; }
+    footer .contacts p {
+      margin: 0; }
