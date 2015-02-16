@@ -1,0 +1,48 @@
+﻿header
+	img(src='img/logo.png', alt='')
+	.phone 8-905-377-34-43
+	h2 Актерское мастерство и ораторское искусство
+	nav
+		ul
+			a(href='index.html')
+				if index
+					li.active
+						span Главная
+				else 
+					li
+						span Главная
+			a(href='about_courses.html')
+				if about_courses
+					li.active
+						span О Курсах
+				else 
+					li
+						span О Курсах
+			a(href='our_programs.html')
+				if our_programs
+					li.active
+						span Наши программы
+				else
+					li
+						span Наши программы
+			a(href='feedback.html')
+				if feedback
+					li.active
+						span Отзывы
+				else
+					li
+						span Отзывы
+			a(href='contacts.html')
+				if contacts
+					li.active
+						span Контакты
+				else
+					li
+						span Контакты
+			a(href='for_life.html')
+				if for_life
+					li.active
+						span Для жизни
+				else
+					li
+						span Для жизни

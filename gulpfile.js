@@ -48,6 +48,11 @@ gulp.task('scripts', function() {
     .pipe(stripDebug())
     .pipe(uglify())
     .pipe(gulp.dest('./build/js/'));
+
+  gulp.src('./src/js/extra/*.js')
+    .pipe(stripDebug())
+    .pipe(uglify())
+    .pipe(gulp.dest('./build/js/extra/'));
 });
 
 // gulp.task('htmlpage', function() {
@@ -108,12 +113,12 @@ gulp.task('default', ['imagemin','scripts', 'sass', 'jade', 'webserver'], functi
  //    gulp.run('imagemin');
  //  });
  
-  gulp.watch('./src/jade/*.jade', function() {
+  gulp.watch(['./src/jade/*.jade','./src/jade/include/*.jade'], function() {
      gulp.run('jade');
   });
  
   // watch for JS changes
-  gulp.watch('./src/js/*.js', function() {
+  gulp.watch(['./src/js/*.js','./src/js/extra/*.js'], function() {
     gulp.run('jshint', 'scripts');
   });
  
@@ -121,7 +126,7 @@ gulp.task('default', ['imagemin','scripts', 'sass', 'jade', 'webserver'], functi
   // gulp.watch('./src/css/*.css', function() {
   //   gulp.run('styles');
   // });
-  gulp.watch('./src/scss/*.scss', function() {
+  gulp.watch(['./src/scss/*.scss','./src/scss/include/*.scss'], function() {
     gulp.run('sass');
   });
 

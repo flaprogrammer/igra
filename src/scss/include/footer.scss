@@ -1,0 +1,26 @@
+﻿footer {
+	background: #2e2e2e;
+	width: 100%;
+	color: #ffffff;
+	font: normal 16px Tahoma, Arial, sans-serif;
+
+	.container {
+		width: 1120px;
+		margin: auto;
+		padding: 70px 0px;
+	}
+
+	.info {
+		margin-bottom: 20px;
+		p {
+			margin: 0;
+		}
+	}
+
+	.contacts {
+			font-size: 20px;
+		p {
+			margin: 0;
+		}
+	}
+}

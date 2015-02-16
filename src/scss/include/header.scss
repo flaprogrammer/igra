@@ -1,0 +1,45 @@
+﻿header {
+	background: $font_color;
+	width: 100%;
+	text-align: center;
+
+	h2 {
+		margin-top: 0px;
+		color: $red_font;
+		font: 300 36px $main_font;
+	}
+
+	.phone {
+		font: 700 53px $main_font;
+		color: $red_font;
+	}
+
+	ul {
+		height: 45px;
+		a {
+			display: inline-block;
+		}
+		li {
+			font: normal 16px $main_font;
+			display: table;
+			height: 45px;
+			width: 150px;
+			text-decoration: none;
+			color: #fefefe;
+			text-transform: uppercase;
+			padding-top: 4px;
+			span {
+				display: table-cell;
+				vertical-align: middle;
+			}
+
+		}
+
+		li.active {
+			background: #eaeaea;
+			color: #2e2e2e;
+
+			
+		}
+	}
+}

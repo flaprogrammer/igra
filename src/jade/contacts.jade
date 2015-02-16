@@ -1,0 +1,22 @@
+﻿doctype html
+html(lang='ru')
+	head
+		meta(charset='UTF-8')
+		title Курсы актерского мастерства отзывы
+		script(type='text/javascript', src='js/script.js')
+		script(src="http://api-maps.yandex.ru/2.1/?lang=ru_RU")
+		link(rel='stylesheet', type='text/css', href='css/style.css')
+	body
+		.container
+			- var contacts = true
+			include ./include/header
+			.main.our_programs
+				h1 Контакты
+				h3 Получить более подробную информацию, а также записаться на курсы вы можете по телефонам:
+				h2 8 (905) 377-34-43
+				h2 8 (908) 339-47-69
+
+				p Адрес: Казань, ул. Бутлерова 30А
+				#map(style="width: 600px; height: 400px")
+			include ./include/footer
+		script(src="js/extra/yandex_map.js")

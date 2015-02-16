@@ -1,0 +1,30 @@
+﻿* {
+	box-sizing:border-box;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: $main_font;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 30px
+}
+.hr {
+	background: #e84747;
+	height: 3px;
+}
+
+h3 {
+	font-size: 24px;
+}
+
+p {
+	font-family: $text_font;
+	line-height: 1.4em;
+}
