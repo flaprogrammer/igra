@@ -50,6 +50,8 @@ header {
       header ul li span {
         display: table-cell;
         vertical-align: middle; }
+      header ul li:hover {
+        background: #444444; }
     header ul li.active {
       background: #eaeaea;
       color: #2e2e2e; }

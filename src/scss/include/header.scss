@@ -32,14 +32,14 @@
 				display: table-cell;
 				vertical-align: middle;
 			}
-
+			&:hover {
+				background: #444444;
+			}
 		}
 
 		li.active {
 			background: #eaeaea;
 			color: #2e2e2e;
-
-			
 		}
 	}
 }
