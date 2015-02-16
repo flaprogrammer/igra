@@ -109,9 +109,10 @@ gulp.task('default', ['imagemin','scripts', 'sass', 'jade', 'webserver'], functi
   /*gulp.watch('./src/*.html', function() {
     gulp.run('htmlpage');
   });*/
- //  gulp.watch('./src/img/**/*', function() {
- //    gulp.run('imagemin');
- //  });
+
+  gulp.watch('./src/img/**/*', function() {
+    gulp.run('imagemin');
+  });
  
   gulp.watch(['./src/jade/*.jade','./src/jade/include/*.jade'], function() {
      gulp.run('jade');
