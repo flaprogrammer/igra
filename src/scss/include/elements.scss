@@ -5,6 +5,10 @@
 body {
 	margin: 0px;
 	padding: 0px;
+	font-family: $text_font;
+}
+
+h1,h2,h3 {
 	font-family: $main_font;
 }
 
@@ -27,4 +31,9 @@ h3 {
 p {
 	font-family: $text_font;
 	line-height: 1.4em;
+}
+
+li {
+	line-height: 1.4em;
+	
 }

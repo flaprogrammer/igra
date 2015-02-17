@@ -4,6 +4,9 @@
 body {
   margin: 0px;
   padding: 0px;
+  font-family: "Verdana", sans-serif; }
+
+h1, h2, h3 {
   font-family: "Minion Pro", serif; }
 
 h1 {
@@ -21,6 +24,9 @@ h3 {
 
 p {
   font-family: "Verdana", sans-serif;
+  line-height: 1.4em; }
+
+li {
   line-height: 1.4em; }
 
 header {
@@ -63,17 +69,22 @@ header {
   color: #2e2e2e; }
   .main ul.abilities {
     margin-bottom: 40px;
-    font-size: 20px; }
+    font-size: 18px; }
   .main .photos {
     font-size: 0px;
     margin-bottom: 40px; }
     .main .photos img {
       margin: 3px; }
   .main ul.exercises {
-    font-size: 20px; }
+    font-size: 18px; }
 
 .about_courses p {
   font-size: 20px; }
+
+.for_life .photo {
+  float: left;
+  margin-right: 30px;
+  margin-bottom: 30px; }
 
 footer {
   background: #2e2e2e;
