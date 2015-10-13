@@ -3,3 +3,14 @@
 		font-size: 20px;
 	}
 }
+
+@media screen and (max-width: 640px) {
+	.about_courses p {
+		font-size: 15px;
+		line-height: 1.5em;
+	}
+
+	.about_courses img {
+		max-width: 100%;
+	}
+}

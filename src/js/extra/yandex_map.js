@@ -12,6 +12,6 @@ function init(){
 		hintContent: 'Игра',
 		balloonContent: 'Театр-студия Игра'
 	});
-	
+
 	myMap.geoObjects.add(myPlacemark);
 }

@@ -5,3 +5,13 @@
 		margin-bottom: 30px;
 	}
 }
+
+@media screen and (max-width: 640px) {
+	.for_life img {
+		max-width: 100%;
+	}
+	.for_life p {
+		font-size: 15px;
+		line-height: 1.5em;
+	}
+}

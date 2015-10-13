@@ -18,7 +18,7 @@ var jade = require('gulp-jade');
 var server = require('gulp-server-livereload');
 
 
-
+var browserSync = require('browser-sync').create();
 
 //JS hint task
 gulp.task('jshint', function() {
@@ -36,7 +36,8 @@ gulp.task('imagemin', function() {
   gulp.src(imgSrc)
     //.pipe(changed(imgDst))
     .pipe(imagemin())
-    .pipe(gulp.dest(imgDst));
+    .pipe(gulp.dest(imgDst))
+    .pipe(browserSync.stream());
 });
  
 
@@ -47,12 +48,14 @@ gulp.task('scripts', function() {
     .pipe(concat('script.js'))
     .pipe(stripDebug())
     .pipe(uglify())
-    .pipe(gulp.dest('./build/js/'));
+    .pipe(gulp.dest('./build/js/'))
+    .pipe(browserSync.stream());
 
   gulp.src('./src/js/extra/*.js')
     .pipe(stripDebug())
     .pipe(uglify())
-    .pipe(gulp.dest('./build/js/extra/'));
+    .pipe(gulp.dest('./build/js/extra/'))
+    .pipe(browserSync.stream());
 });
 
 // gulp.task('htmlpage', function() {
@@ -70,16 +73,17 @@ gulp.task('sass', function () {
     gulp.src('./src/scss/*.scss')
       .pipe(sass({errLogToConsole:true}))
       .pipe(autoprefix('last 2 versions'))
-      .pipe(gulp.dest('./build/css'));
+      .pipe(gulp.dest('./build/css'))
+      .pipe(browserSync.stream());
 });
 
 
 gulp.task('webserver', function() {
-  gulp.src('build')
-    .pipe(server({
-      livereload: true,
-      defaultFile: 'index.html'
-    }));
+    browserSync.init({
+        server: {
+            baseDir: "./build/"
+        }
+    });
 });
 
 gulp.task('jade', function() {
@@ -91,6 +95,7 @@ gulp.task('jade', function() {
       pretty: true
     }))
     .pipe(gulp.dest('./build/'))
+    .pipe(browserSync.stream());
 });
 
 

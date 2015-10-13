@@ -9,15 +9,46 @@
 		font-size: 18px;
 	}
 
-	.photos {
-		font-size: 0px;
-		margin-bottom: 40px;
-		img {
-			margin: 3px;
-		}
-	}
+
 
 	ul.exercises {
 		font-size: 18px;
+	}
+}
+
+.photos {
+	font-size: 0px;
+	margin-bottom: 40px;
+	img {
+		margin: 3px;
+	}
+}
+
+@media screen and (max-width: 1120px) {
+	.main {
+		width: auto;
+		padding: 0 10px;
+	}
+
+	.photos {
+		text-align: center;
+	}
+
+	.photos img {
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	ul.abilities {
+		padding-left: 20px;
+	}
+
+	.our_programs img {
+		max-width: 100%;
+	}
+	.our_programs p {
+		font-size: 15px;
+		line-height: 1.5em;
 	}
 }

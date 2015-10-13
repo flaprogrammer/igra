@@ -24,3 +24,18 @@
 		}
 	}
 }
+
+
+@media screen and (max-width: 1120px) {
+	footer>.container {
+		width: auto;
+		padding: 20px 10px;
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+	footer {
+		font-size: 12px;
+	}
+}

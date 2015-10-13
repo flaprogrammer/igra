@@ -1,11 +1,15 @@
 ﻿* {
 	box-sizing:border-box;
 }
+html {
+	width: 100%;
+}
 
 body {
 	margin: 0px;
 	padding: 0px;
 	font-family: $text_font;
+	width: 100%;
 }
 
 h1,h2,h3 {
@@ -36,4 +40,19 @@ p {
 li {
 	line-height: 1.4em;
 	
+}
+
+a {
+	color: inherit;
+}
+
+@media screen and (max-width: 1120px) {
+	body {
+		min-width: 320px;
+	}
+
+	#map {
+		max-width: 100%;
+		margin-bottom: 20px;
+	}
 }

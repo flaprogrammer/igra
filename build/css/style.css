@@ -1,10 +1,17 @@
+body > .container {
+  width: 100%; }
+
 * {
   box-sizing: border-box; }
+
+html {
+  width: 100%; }
 
 body {
   margin: 0px;
   padding: 0px;
-  font-family: "Verdana", sans-serif; }
+  font-family: "Verdana", sans-serif;
+  width: 100%; }
 
 h1, h2, h3 {
   font-family: "Minion Pro", serif; }
@@ -29,38 +36,70 @@ p {
 li {
   line-height: 1.4em; }
 
+a {
+  color: inherit; }
+
+@media screen and (max-width: 1120px) {
+  body {
+    min-width: 320px; }
+  #map {
+    max-width: 100%;
+    margin-bottom: 20px; } }
+
 header {
   background: #2e2e2e;
   width: 100%;
   text-align: center; }
-  header h2 {
-    margin-top: 0px;
-    color: #c43a3a;
-    font: 300 36px "Minion Pro", serif; }
-  header .phone {
-    font: 700 53px "Minion Pro", serif;
-    color: #c43a3a; }
-  header ul {
-    height: 45px; }
-    header ul a {
-      display: inline-block; }
-    header ul li {
-      font: normal 16px "Minion Pro", serif;
-      display: table;
-      height: 45px;
-      width: 150px;
-      text-decoration: none;
-      color: #fefefe;
-      text-transform: uppercase;
-      padding-top: 4px; }
-      header ul li span {
-        display: table-cell;
-        vertical-align: middle; }
-      header ul li:hover {
-        background: #444444; }
-    header ul li.active {
-      background: #eaeaea;
-      color: #2e2e2e; }
+
+.header__ul {
+  height: 45px;
+  padding: 0; }
+  .header__ul a {
+    display: inline-block;
+    text-decoration: none; }
+  .header__ul li {
+    font: normal 16px "Minion Pro", serif;
+    display: table;
+    height: 45px;
+    width: 150px;
+    text-decoration: none;
+    color: #fefefe;
+    text-transform: uppercase;
+    padding-top: 4px; }
+    .header__ul li span {
+      display: table-cell;
+      vertical-align: middle; }
+    .header__ul li:hover {
+      background: #444444; }
+  .header__ul li.active {
+    background: #eaeaea;
+    color: #2e2e2e; }
+
+.header__title {
+  margin-top: 0px;
+  color: #c43a3a;
+  font: 300 36px "Minion Pro", serif; }
+
+.header__phone {
+  font: 700 53px "Minion Pro", serif;
+  color: #c43a3a; }
+
+.header__logo {
+  max-width: 471px; }
+
+@media screen and (max-width: 1120px) {
+  .header__ul {
+    height: auto; }
+    .header__ul li {
+      width: 130px; } }
+
+@media screen and (max-width: 640px) {
+  .header__logo {
+    width: 100%; }
+  .header__phone {
+    font-size: 30px; }
+  .header__title {
+    font-size: 18px; } }
 
 .main {
   width: 1120px;
@@ -70,21 +109,54 @@ header {
   .main ul.abilities {
     margin-bottom: 40px;
     font-size: 18px; }
-  .main .photos {
-    font-size: 0px;
-    margin-bottom: 40px; }
-    .main .photos img {
-      margin: 3px; }
   .main ul.exercises {
     font-size: 18px; }
 
+.photos {
+  font-size: 0px;
+  margin-bottom: 40px; }
+  .photos img {
+    margin: 3px; }
+
+@media screen and (max-width: 1120px) {
+  .main {
+    width: auto;
+    padding: 0 10px; }
+  .photos {
+    text-align: center; }
+  .photos img {
+    max-width: 100%; } }
+
+@media screen and (max-width: 640px) {
+  ul.abilities {
+    padding-left: 20px; }
+  .our_programs img {
+    max-width: 100%; }
+  .our_programs p {
+    font-size: 15px;
+    line-height: 1.5em; } }
+
 .about_courses p {
   font-size: 20px; }
+
+@media screen and (max-width: 640px) {
+  .about_courses p {
+    font-size: 15px;
+    line-height: 1.5em; }
+  .about_courses img {
+    max-width: 100%; } }
 
 .for_life .photo {
   float: left;
   margin-right: 30px;
   margin-bottom: 30px; }
+
+@media screen and (max-width: 640px) {
+  .for_life img {
+    max-width: 100%; }
+  .for_life p {
+    font-size: 15px;
+    line-height: 1.5em; } }
 
 footer {
   background: #2e2e2e;
@@ -103,3 +175,12 @@ footer {
     font-size: 20px; }
     footer .contacts p {
       margin: 0; }
+
+@media screen and (max-width: 1120px) {
+  footer > .container {
+    width: auto;
+    padding: 20px 10px; } }
+
+@media screen and (max-width: 640px) {
+  footer {
+    font-size: 12px; } }
